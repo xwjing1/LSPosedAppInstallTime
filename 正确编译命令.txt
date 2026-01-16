@@ -1,0 +1,38 @@
+==========================================
+正确的编译命令
+==========================================
+
+## 重要：命令需要分两行执行！
+
+### 方法1：分步执行
+
+```cmd
+cd C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+gradlew.bat assembleDebug
+```
+
+### 方法2：一条命令（使用 &&）
+
+```cmd
+cd C:\Users\Administrator\Downloads\LSPosedAppInstallTime && gradlew.bat assembleDebug
+```
+
+### 方法3：使用 build.bat（最简单）
+
+```cmd
+cd C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+build.bat
+```
+
+### 方法4：使用 Android Studio（推荐）
+
+1. 打开 Android Studio
+2. File -> Open -> 选择 LSPosedAppInstallTime 文件夹
+3. Build -> Build APK
+
+==========================================
+常见错误：
+✗ cd C:\Users\...\LSPosedAppInstallTimegradlew.bat  (缺少空格)
+✓ cd C:\Users\...\LSPosedAppInstallTime
+✓ gradlew.bat assembleDebug
+==========================================

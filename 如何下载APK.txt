@@ -1,0 +1,45 @@
+==========================================
+如何下载编译好的 APK
+==========================================
+
+## 步骤1：进入 Actions 页面
+
+1. 在 GitHub 仓库页面（https://github.com/xwjing1/LSPosedAppInstallTime）
+2. 点击顶部的 "Actions" 标签页（在 Code、Issues、Pull requests 旁边）
+
+## 步骤2：查看编译状态
+
+1. 在 Actions 页面，会看到 "Build APK" workflow
+2. 如果正在编译：会显示黄色圆圈和 "Running"
+3. 如果编译完成：会显示绿色对勾和 "This workflow run completed successfully"
+4. 如果编译失败：会显示红色叉号
+
+## 步骤3：点击最新的 workflow run
+
+1. 点击最新的（最上面的）workflow run
+2. 会进入详细页面
+
+## 步骤4：下载 APK
+
+1. 在 workflow run 详细页面，滚动到最底部
+2. 会看到一个 "Artifacts" 部分
+3. 里面有一个 "app-debug" 文件
+4. 点击 "app-debug" 就会自动下载 APK
+
+## 如果看不到 Artifacts
+
+可能的原因：
+1. 编译还在进行中（等待完成）
+2. 编译失败了（查看错误信息）
+3. 需要刷新页面
+
+## 如果编译失败
+
+1. 点击失败的 workflow run
+2. 查看错误信息
+3. 可能需要上传完整的 app 文件夹
+
+==========================================
+快速链接：
+Actions 页面：https://github.com/xwjing1/LSPosedAppInstallTime/actions
+==========================================

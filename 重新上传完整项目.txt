@@ -1,0 +1,47 @@
+==========================================
+重新上传完整项目（不删除仓库）
+==========================================
+
+## 如果不想删除仓库，可以重新上传完整文件
+
+### 步骤1：删除现有文件（可选）
+
+1. 在仓库页面，进入每个文件夹
+2. 点击文件，然后点击删除按钮
+3. 或直接上传新文件覆盖
+
+### 步骤2：上传完整项目
+
+1. 点击 "Add file" -> "Upload files"
+2. 打开文件夹：C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+3. 选择所有文件和文件夹：
+   - app（整个文件夹）
+   - .github（整个文件夹）
+   - gradle（整个文件夹）
+   - gradlew
+   - gradlew.bat
+   - build.gradle
+   - settings.gradle
+   - gradle.properties
+   - 所有其他文件
+4. 拖拽到 GitHub 页面
+5. 点击 "Commit changes"
+
+### 步骤3：验证文件结构
+
+上传后检查：
+- app/src/main/java/com/example/appinstalltime/MainHook.java
+- .github/workflows/build.yml
+- gradlew
+- gradle/wrapper/gradle-wrapper.jar
+
+### 步骤4：运行编译
+
+1. 点击 "Actions" 标签页
+2. 点击 "Build APK"
+3. 点击 "Run workflow"
+4. 等待编译完成
+
+==========================================
+推荐：删除仓库重新创建（更干净）
+==========================================

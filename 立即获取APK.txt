@@ -1,0 +1,51 @@
+==========================================
+立即获取 APK - 无需安装工具
+==========================================
+
+## 最快方法：GitHub Actions 在线编译
+
+### 步骤1：上传到 GitHub（5分钟）
+
+1. 访问 https://github.com
+2. 注册/登录账号（免费）
+3. 点击右上角 "+" -> New repository
+4. 仓库名：LSPosedAppInstallTime
+5. 选择 Public 或 Private
+6. 点击 Create repository
+
+7. 上传文件：
+   - 点击 "uploading an existing file"
+   - 拖拽整个 LSPosedAppInstallTime 文件夹
+   - 点击 Commit changes
+
+### 步骤2：自动编译（5-10分钟）
+
+1. 上传后，GitHub Actions 会自动开始编译
+2. 点击 Actions 标签页
+3. 等待编译完成（绿色对勾）
+
+### 步骤3：下载 APK（1分钟）
+
+1. 点击最新的 workflow run
+2. 滚动到底部
+3. 在 Artifacts 中点击 app-debug 下载
+
+## 或者：使用 Gitpod
+
+1. 上传项目到 GitHub
+2. 访问：https://gitpod.io/#你的用户名/LSPosedAppInstallTime
+3. 在终端运行：./gradlew assembleDebug
+4. 下载 APK
+
+## 项目已准备好
+
+所有文件都已创建，包括：
+✓ 源代码
+✓ GitHub Actions 配置
+✓ 所有配置文件
+
+只需要上传即可！
+
+==========================================
+总时间：约 15-20 分钟
+==========================================

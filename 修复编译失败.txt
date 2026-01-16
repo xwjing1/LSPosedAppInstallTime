@@ -1,0 +1,72 @@
+==========================================
+修复编译失败
+==========================================
+
+## 当前状态：2 个 workflow 都失败了
+
+## 步骤1：查看详细错误
+
+1. 点击最新的失败的 workflow："Add files via upload"
+2. 点击 "Build APK #2"
+3. 会进入详细页面
+4. 点击左侧的 "build" job
+5. 查看错误信息（红色文字）
+
+## 常见错误和解决方法
+
+### 错误1：找不到 gradlew
+错误：./gradlew: No such file or directory
+
+解决方法：
+- 需要上传 gradlew 文件（Linux 版本）
+- 在本地项目中有 gradlew.bat（Windows），但 GitHub Actions 需要 gradlew（Linux）
+
+### 错误2：找不到 app 文件夹
+错误：找不到 app/build.gradle
+
+解决方法：
+- 需要上传完整的 app 文件夹
+- 包含所有源代码
+
+### 错误3：找不到源代码
+错误：找不到 MainHook.java
+
+解决方法：
+- 需要上传 app/src/main/java/ 下的所有文件
+
+## 步骤2：上传缺失的文件
+
+### 必须上传的文件列表：
+
+1. **gradlew**（Linux 版本，不是 gradlew.bat）
+   - 如果没有，需要创建或从其他项目复制
+
+2. **app 文件夹**（完整）
+   - app/src/main/java/com/example/appinstalltime/MainHook.java
+   - app/src/main/AndroidManifest.xml
+   - app/build.gradle
+
+3. **gradle 文件夹**
+   - gradle/wrapper/gradle-wrapper.jar
+   - gradle/wrapper/gradle-wrapper.properties
+
+## 快速解决方法
+
+### 方法1：创建 gradlew（Linux 版本）
+
+如果本地没有 gradlew（只有 gradlew.bat），可以：
+1. 在 GitHub 网页上创建新文件
+2. 文件名：gradlew
+3. 内容：从其他 Android 项目复制，或使用标准 Gradle Wrapper
+
+### 方法2：确保上传完整的项目结构
+
+上传时确保包含：
+- app/ 文件夹（整个文件夹）
+- gradle/ 文件夹（整个文件夹）
+- gradlew 文件
+- 所有 .gradle 配置文件
+
+==========================================
+先点击失败的 workflow 查看具体错误
+==========================================

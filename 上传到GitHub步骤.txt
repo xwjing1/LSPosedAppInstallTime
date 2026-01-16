@@ -1,0 +1,47 @@
+==========================================
+上传代码到 GitHub 并自动编译
+==========================================
+
+## 你的仓库地址
+https://github.com/xwjing1/LSPosedAppInstallTime.git
+
+## 方法1：使用网页上传（最简单）
+
+### 步骤1：上传文件
+1. 在 GitHub 仓库页面，点击 "uploading an existing file"
+2. 打开文件夹：C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+3. 选择所有文件（Ctrl+A）
+4. 拖拽到 GitHub 页面
+5. 在底部输入提交信息：Initial commit
+6. 点击 "Commit changes"
+
+### 步骤2：等待自动编译
+1. 上传后，点击顶部的 "Actions" 标签页
+2. 会看到 "Build APK" workflow 正在运行
+3. 等待编译完成（约 5-10 分钟）
+4. 看到绿色对勾表示成功
+
+### 步骤3：下载 APK
+1. 点击最新的 workflow run
+2. 滚动到底部
+3. 在 "Artifacts" 部分点击 "app-debug" 下载
+
+## 方法2：使用 Git 命令行
+
+如果你安装了 Git：
+
+```cmd
+cd C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/xwjing1/LSPosedAppInstallTime.git
+git push -u origin main
+```
+
+然后等待 GitHub Actions 自动编译。
+
+==========================================
+推荐使用方法1（网页上传，最简单）
+==========================================

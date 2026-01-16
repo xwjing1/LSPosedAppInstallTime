@@ -1,0 +1,55 @@
+==========================================
+完整项目文件清单（必须全部上传）
+==========================================
+
+## 根目录文件
+
+✓ gradlew（Linux 版本）
+✓ gradlew.bat（Windows 版本）
+✓ build.gradle
+✓ settings.gradle
+✓ gradle.properties
+✓ local.properties.example（可选）
+
+## 文件夹
+
+### app/ 文件夹（必须）
+app/
+├── build.gradle
+├── src/
+│   └── main/
+│       ├── AndroidManifest.xml
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── appinstalltime/
+│                       └── MainHook.java
+
+### .github/ 文件夹（必须）
+.github/
+└── workflows/
+    └── build.yml
+
+### gradle/ 文件夹（必须）
+gradle/
+└── wrapper/
+    ├── gradle-wrapper.jar
+    └── gradle-wrapper.properties
+
+## 上传方法
+
+1. 在 GitHub 页面，点击 "Add file" -> "Upload files"
+2. 打开：C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+3. 选择所有文件和文件夹（Ctrl+A）
+4. 拖拽到 GitHub
+5. 点击 "Commit changes"
+
+## 验证
+
+上传后检查：
+- app 文件夹存在
+- .github 文件夹存在
+- gradle 文件夹存在
+- gradlew 文件存在
+
+==========================================

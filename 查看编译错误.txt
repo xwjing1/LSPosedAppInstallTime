@@ -1,0 +1,71 @@
+==========================================
+查看编译错误并修复
+==========================================
+
+## 当前状态：编译失败（红色 X）
+
+## 步骤1：查看错误信息
+
+1. 点击失败的 workflow run："Add GitHub Actions workflow to build APK"
+2. 会进入详细页面
+3. 查看错误信息（通常是红色的错误提示）
+
+## 常见错误和解决方法
+
+### 错误1：找不到 app 文件夹
+错误信息：找不到 app/build.gradle 或类似
+
+解决方法：
+- 需要上传完整的 app 文件夹
+- 包含 app/src/main/java/... 等源代码
+
+### 错误2：找不到 gradlew
+错误信息：找不到 gradlew 或 gradlew.bat
+
+解决方法：
+- 需要上传 gradlew 和 gradlew.bat 文件
+- 以及 gradle/wrapper/ 文件夹
+
+### 错误3：找不到源代码
+错误信息：找不到 MainHook.java 或类似
+
+解决方法：
+- 需要上传完整的源代码文件
+
+## 步骤2：上传缺失的文件
+
+### 检查需要上传的文件：
+
+必需文件：
+✓ app/src/main/java/com/example/appinstalltime/MainHook.java
+✓ app/src/main/AndroidManifest.xml
+✓ app/build.gradle
+✓ build.gradle
+✓ settings.gradle
+✓ gradlew
+✓ gradlew.bat
+✓ gradle/wrapper/gradle-wrapper.jar
+✓ gradle/wrapper/gradle-wrapper.properties
+
+### 上传方法：
+
+1. 在仓库页面，点击 "Add file" -> "Upload files"
+2. 打开文件夹：C:\Users\Administrator\Downloads\LSPosedAppInstallTime
+3. 确保上传完整的项目结构：
+   - app 文件夹（整个文件夹）
+   - gradle 文件夹（整个文件夹）
+   - 所有 .gradle 文件
+   - gradlew 和 gradlew.bat
+4. 点击 "Commit changes"
+
+## 步骤3：重新编译
+
+上传完整文件后：
+1. 回到 Actions 页面
+2. 点击 "Build APK" workflow
+3. 点击 "Run workflow" 按钮
+4. 等待编译完成
+
+==========================================
+先点击失败的 workflow 查看具体错误信息
+==========================================
